@@ -1,13 +1,17 @@
 /*
+
+	Author: Ragogna Riccardo
+	Year: March, 2026
+	
 	C Souce File Template for Exp3C6713A
 
 	The code implements the position control for the 2-DOF Magnetic Lead Scew Actuator
 
-	From the program Pe-View 9, start the program, then to initialize the the sensors:
+	Procedure: from the program Pe-View9, download and start this code, then to initialize the sensors:
 	1) wait until the variable "mode" becomes 1. 
-	2) rotate rotors and mover till "Initial_Setup" == 1.
-	First upload the position of the mover ("angle_ref_M " and "linear_encoder_ref_M") within the possible shaft range, then "mode" to 2,
-	wait about one second and then set to one the variable "Upload_Angle_Reference".
+	2) rotate rotors and mover untill "Initial_Setup" == 1.
+	To control the position of the mover: first upload the position of the mover ("angle_ref_M " and "linear_encoder_ref_M") within the possible shaft range,
+	then put "mode" to 2. Wait about one second and then set to one the variable "Upload_Angle_Reference".
 	From now the procedure is: upload the mover references to the desired position, wait about 1 second and set "Upload_Angle_Reference" to 1.
 */
 
