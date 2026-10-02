@@ -164,7 +164,7 @@ s = tf('s');        % Laplace operator s
 z = tf('z', Ts);    % Z-operator z
 
 
-M = c2d([wn^2/(s^2 + s*2*epsilon*wn+wn^2) , 0; s*wn^2/(s^2 + s*2*epsilon*wn+wn^2) ,  0; 0 , wn^2/(s^2 + s*2*epsilon*wn+wn^2);0 , s*wn^2/(s^2 + s*2*epsilon*wn+wn^2)], Ts).*[z^-1  0;  z^-1 0;0 z^-1 ;0  z^-1]; %RITARDO??
+M = c2d([wn^2/(s^2 + s*2*epsilon*wn+wn^2) , 0; s*wn^2/(s^2 + s*2*epsilon*wn+wn^2) ,  0; 0 , wn^2/(s^2 + s*2*epsilon*wn+wn^2);0 , s*wn^2/(s^2 + s*2*epsilon*wn+wn^2)], Ts).*[z^-1  0;  z^-1 0;0 z^-1 ;0  z^-1];
 
 % Desired evolution 
 yod = lsim(M, r)';   % 4xN
